@@ -1,7 +1,7 @@
 function display(data) {
   let str = "";
   data.forEach((user) => {
-    str += `<a><div class="userBlock">`;
+    str += `<a class = "main-contain"><div class="userBlock">`;
     str += `<div class="userData"><b>ID</b>: ${user.id}</div>`;
     str += `<div class="userData"><b>Name</b>: ${user.name}</div>`;
     str += `<div class="userData"><b>Username</b>: ${user.username}</div>`;
@@ -107,5 +107,3 @@ function worker_fun() {
     }
   }, 800);
 }
-
-
