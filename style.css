@@ -1,0 +1,65 @@
+#demo{
+  text-align: center;
+}
+#button{
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    width: 100%;
+}
+#button button{
+  margin: 5px;
+  padding: 5px;
+}
+#button button:hover{
+  background-color:aliceblue;
+  border-radius: 10px;
+}
+.contain-user{
+  border-radius: 10px solid;
+}
+.selected {
+  background-color:aqua;
+}
+
+
+.userBlock {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid ;
+  border-radius: 5px;
+}
+.contain-user{
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  grid-column-gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center; 
+}
+#mobile-button{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+  .contain-user{
+    display: grid;
+    grid-template-columns:  repeat(1, 1fr);
+    grid-column-gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center; 
+  }
+  #button{
+    display: none;
+  }
+  #mobile-button{
+    display: block;
+    margin: 10px 200px 10px 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #mobile-button button{
+    margin-bottom: 10px;;
+  }
+  
+}

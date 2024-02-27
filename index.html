@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div id="button" class="navbar" >
+    <button  id="callbackBtn" class="selected" onclick="toggleButton('callbackBtn');callBack()"> CallBack</button>
+    <button  id="promiseBtn" onclick="toggleButton('promiseBtn');proMise()"> promise</button>
+    <button id="asyncBtn" onclick="toggleButton('asyncBtn');async_await()">async await</button> 
+    <button id="workerBtn" onclick="toggleButton('workerBtn');worker_fun()">Worker</button> 
+    <button id="clearBtn" onclick="toggleButton('clearBtn');clear_data()">clear</button>
+    </div>
+    <div id="mobile-button" class="navbar" >
+        <button  id="callbackBtn" class="selected" onclick="toggleButton('callbackBtn');callBack()"> CallBack</button>
+        <button  id="promiseBtn" onclick="toggleButton('promiseBtn');proMise()"> promise</button>
+        <button id="asyncBtn" onclick="toggleButton('asyncBtn');async_await()">async await</button> 
+        <button id="workerBtn" onclick="toggleButton('workerBtn');worker_fun()">Worker</button> 
+        <button id="clearBtn" onclick="toggleButton('clearBtn');clear_data()">clear</button>
+    </div>
+    <div id="demo" class="contain-user">
+    </div>
+</body>
+</html>
